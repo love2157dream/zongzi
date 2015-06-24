@@ -348,27 +348,35 @@
 
 		/*文字的视角*/
 		.c_t_view_0{
+			transition: all 0;
 			transform:scale(.8);
 		} 
 		.c_t_mirror_0{
+			transition: all 0;
 			display: none;
 		}			
 		.c_t_view_2{
+			transition: all 0;
 			transform:scale(.8) rotateY(30deg) translate(-50px,0) rotate(8deg);
 		} 
 		.c_t_mirror_2{
+			transition: all 0;
 			transform:scale(.7) rotateY(70deg) translate(283px,-15px) rotate(-8deg);
 		}			
 		.c_t_view_3{
+			transition: all 0;
 			transform:scale(.75) rotateY(49deg) translate(-94px,0px) rotate(-8deg);
 		} 
 		.c_t_mirror_3{
+			transition: all 0;
 			transform:scale(.75) rotateY(49deg) translate(118px,0) rotate(-15deg);
 		}			
 		.c_t_view_4{
-			transform:scale(.6) rotateY(50deg) translate(196px,10px) rotate(-24deg);
+			transition: all 0;
+			transform:scale(.6) rotateY(50deg) translate(-196px,10px) rotate(-24deg);
 		} 
 		.c_t_mirror_4{
+			transition: all 0;
 			transform:scale(.8) rotateY(30deg) translate(58px,10) rotate(-5deg);
 		}			
 	 
@@ -500,18 +508,52 @@
  		}); 		
  		s3.add(1200,function(){
  			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_2";
- 		}); 		
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_2';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_2';
+ 		}); 
+
  		s3.add(1400,function(){
  			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_3";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_3';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_3';
  		}); 		
  		s3.add(1600,function(){
  			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_4";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_4';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_4';
  		}); 		
  		s3.add(1800,function(){
  			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_0";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_mirror_0';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_view_0';
+ 		}); 		
+
+ 		s3.add(3000,function(){
+ 			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_4";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_4';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_4';
+ 		}); 		
+ 		s3.add(3200,function(){
+ 			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_3";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_3';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_3';
+ 		}); 		
+ 		s3.add(3400,function(){
+ 			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_2";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_2';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_2';
+ 		}); 		
+ 		s3.add(3600,function(){
+ 			g('c_zongzirou').className="c_zongzirou c_zongzirou_in c_zongzirou_view_1";
+ 			g('c_t_1').className = 'c_t_1 c_t_in c_t_view_0';
+ 			g('c_t_2').className = 'c_t_2 c_t_in c_t_mirror_0';
+ 		}); 	
+
+ 		s3.add(5000,function(){
+ 			 s3.start();
  		});
  		 
-		s2.start(3000);
+		s2.start();
 	</script>
 </body>
 </html>
